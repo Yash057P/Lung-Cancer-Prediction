@@ -7,7 +7,7 @@ import warnings
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 
-DATASET_PATH = 'C:\\Users\\Yash\\Desktop\\ml_dwm project\\lung cancer prediction\\survey lung cancer.csv'
+DATASET_PATH = 'Your Dataset file path'
 TARGET_COLUMN = 'LUNG_CANCER'
 
 def load_and_preprocess_data(file_path):
@@ -137,3 +137,4 @@ if __name__ == "__main__":
         print("Please ensure the CSV file is in the same directory as this Python script.")
     except Exception as e:
         print(f"\nAn unexpected error occurred: {e}")
+
