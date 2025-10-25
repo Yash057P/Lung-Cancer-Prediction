@@ -57,9 +57,31 @@ The output provides a clear result and an interpretation of the logistic regress
     Confidentiality/Model Certainty: The model is **highly  certain** of this prediction.
     =====================================================================================
 
-💡 Future Enhancements  
-Implement feature importance analysis (e.g., using feature_importances_) to determine which symptoms contribute most to the prediction.
+🌐 Streamlit Web App (GUI Version):
 
-Containerize the application using Docker.
+An enhanced version of this project is now available as a Streamlit-based web application (app.py).
+This version replaces manual terminal inputs with a clean, interactive browser interface.
 
-Wrap the model in a web service (e.g., Flask or Streamlit) for a user-friendly GUI.
+🔧 Running the Streamlit App
+
+To launch the GUI version:  
+
+    pip install streamlit scikit-learn pandas
+    streamlit run app.py
+
+Then open the provided local URL (usually http://localhost:8501) in your browser.
+
+🖥️ Features:  
+- Interactive question-based interface  
+- Choose between Random Forest and Logistic Regression models  
+- Automatic question generation from dataset columns  
+- Real-time predictions with confidence percentage
+
+No additional configuration required
+
+📁 Files Used:
+
+    app.py — Streamlit web interface (uses the same dataset and ML logic)  
+    survey lung cancer.csv — Dataset file
+    rf.py and logistic_regression.py — Backend ML logic used in CLI version
+
